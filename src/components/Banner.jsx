@@ -16,7 +16,9 @@ const Banner = () => {
         <Carousel>
         <div >
             <img  src={banner1} />
-            <p>moja</p>
+           <div className='absolute top-14 h-14 w-14 start-14'>
+           <p className='text-6xl text-violet-400'>Learn your dream instrument</p>
+           </div>
         </div>
         <div>
             <img  src={banner2} />

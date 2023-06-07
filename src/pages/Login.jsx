@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 import Swal from 'sweetalert2'
 import GoogleSignIn from './GoogleSignin';
+import image from '../assets/images/auth/login.png'
 
 const Login = () => {
   
@@ -46,8 +47,8 @@ const Login = () => {
             <div className="min-h-screen text-white bg-transparent hero">
                 <div className="flex-col hero-content md:flex-row-reverse">
                     <div className="text-center md:w-1/2 lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="text-5xl font-bold text-center">Login now!</h1>
+                        <div className="py-6 text-center rounded-lg"><img src={image} alt="" /></div>
                     </div>
                     <div className="max-w-sm shadow-2xl card md:w-1/2 bg-fuchsia-950">
                         <form onSubmit={handleLogin} className="card-body">
@@ -69,7 +70,7 @@ const Login = () => {
                             
                             {/* TODO: make button disabled for captcha */}
                             <div className="mt-6 form-control">
-                                <input  className="text-white  btn bg-fuchsia-700" type="submit" value="Login" />
+                                <input  className="text-white btn bg-fuchsia-700" type="submit" value="Login" />
                             </div>
                         </form>
                         <GoogleSignIn></GoogleSignIn>

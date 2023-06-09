@@ -1,0 +1,87 @@
+[
+    {
+        "name": "John Smith",
+        "email": "john.smith@example.com",
+        "image": "https://i.ibb.co/16hRQ6s/vince-fleming-j3lf-Jn6deo-unsplash.jpg",
+        "total_students": 52,
+        "number_of_classes": 3
+      },
+      {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@example.com",
+        "image": "https://i.ibb.co/0mftd67/ayo-ogunseinde-6-W4-F62s-N-y-I-unsplash.jpg",
+        "total_students": 87,
+        "number_of_classes": 4
+      },
+      {
+        "name": "Michael Brown",
+        "email": "michael.brown@example.com",
+        "image": "https://i.ibb.co/6sxsKKj/shahin-khalaji-FPKw01ssvx-U-unsplash.jpg",
+        "total_students": 27,
+        "number_of_classes": 2
+      },
+      {
+        "name": "Emily Davis",
+        "email": "emily.davis@example.com",
+        "image": "https://i.ibb.co/GxFG3Gg/houcine-ncib-B4-Tj-Xn-I0-Y2c-unsplash.jpg",
+        "total_students": 14,
+        "number_of_classes": 2
+      },
+      {
+        "name": "David Wilson",
+        "email": "https://i.ibb.co/02TF20v/nathan-dumlao-T-Z-ny-Vb1e-Q-unsplash.jpg",
+        "image": "david_wilson.jpg",
+        "total_students": 26,
+        "number_of_classes": 3
+      },
+      {
+        "name": "Jessica Lee",
+        "email": "jessica.lee@example.com",
+        "image": "https://i.ibb.co/X3hz3FY/kirill-balobanov-2r-Is8-OH5ng0-unsplash.jpg",
+        "total_students": 10,
+        "number_of_classes": 1
+      },
+      {
+        "name": "Matthew Turner",
+        "email": "matthew.turner@example.com",
+        "image": "https://i.ibb.co/Srg2TyX/mahdi-bafande-21t-Bix-TEax-I-unsplash.jpg",
+        "total_students": 4,
+        "number_of_classes": 2
+      },
+      {
+        "name": "Olivia Adams",
+        "email": "olivia.adams@example.com",
+        "image": "https://i.ibb.co/m9RczXK/tamara-bellis-Mn1-Uopx7if8-unsplash.jpg",
+        "total_students": 4,
+        "number_of_classes": 1
+      },
+      {
+        "name": "William Foster",
+        "email": "william.foster@example.com",
+        "image": "https://i.ibb.co/8bQJ8PL/blake-cheek-1ljk-URE56-Zw-unsplash.jpg",
+        "total_students": 7,
+        "number_of_classes": 1
+      },
+      {
+        "name": "Sophia Campbell",
+        "email": "sophia.campbell@example.com",
+        "image": "https://i.ibb.co/jLJKj59/tuva-mathilde-loland-m-K-sj-D0-Fr-Xw-unsplash.jpg",
+        "total_students": 5,
+        "number_of_classes": 2
+      },
+      {
+        "name": "Daniel Hernandez",
+        "email": "daniel.hernandez@example.com",
+        "image": "https://i.ibb.co/4dwdY2W/emiliano-vittoriosi-f-IM5o-Ad-HAx-E-unsplash.jpg",
+        "total_students": 7,
+        "number_of_classes": 2
+      },
+      {
+        "name": "Ava Martinez",
+        "email": "ava.martinez@example.com",
+        "image": "https://i.ibb.co/qYYWcvp/valentina-aleksandrovna-9-Ps0le-Ys2-CM-unsplash.jpg",
+        "total_students": 3,
+        "number_of_classes": 2
+      }
+     
+]

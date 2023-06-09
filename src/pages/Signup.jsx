@@ -42,7 +42,7 @@ const Signup = () => {
             <div className="min-h-screen bg-transparent hero">
                 <div className="flex-col hero-content lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold text-center text-white">Sign up now!</h1>
+                        <h1 className="font-mono text-5xl font-bold text-center text-white">Sign up now!</h1>
                         <p className="py-6 text-center"><img src={image} alt="" /></p>
                     </div>
                     <div className="flex-shrink-0 w-full max-w-sm shadow-2xl card bg-fuchsia-950">

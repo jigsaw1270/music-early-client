@@ -1,0 +1,120 @@
+ [
+      {
+        "classname": "Piano",
+        "image": "https://i.ibb.co/5R3f6tm/jordan-whitfield-Bhf-E1-Igcs-A8-unsplash.jpg",
+        "instructor": "John Smith",
+        "available_seat": 10,
+        "price": 50,
+        "popularity": 8,
+        "total_students" :  52 
+      },
+      {
+        "classname": "Guitar",
+        "image": "https://i.ibb.co/YBmNBZT/jacek-dylag-h-UHzai-AHu-Uc-unsplash.jpg",
+        "instructor": "Sarah Johnson",
+        "available_seat": 5,
+        "price": 40,
+        "popularity": 9,
+        "total_students" :   87
+      },
+      {
+        "classname": "Violin",
+        "image": "https://i.ibb.co/gJnPDBZ/lucia-macedo-d9-2k-PJBG0-U-unsplash.jpg",
+        "instructor": "Michael Brown",
+        "available_seat": 7,
+        "price": 45,
+        "popularity": 7,
+        "total_students" :  20
+      },
+      {
+        "classname": "Drums",
+        "image": "https://i.ibb.co/MfRw3Ch/matthijs-smit-b-RG2-C0-FAQEY-unsplash.jpg",
+        "instructor": "Emily Davis",
+        "available_seat": 3,
+        "price": 55,
+        "popularity": 6,
+        "total_students" :  27
+      },
+      {
+        "classname": "Saxophone",
+        "image": "https://i.ibb.co/mTvMnZ7/jens-thekkeveettil-d-BWv-Uq-Bo-OU8-unsplash.jpg",
+        "instructor": "David Wilson",
+        "available_seat": 8,
+        "price": 60,
+        "popularity": 7,
+        "total_students" :  4
+
+      },
+      {
+        "classname": "Flute",
+        "image": "https://i.ibb.co/8XqN7SQ/ani-adigyozalyan-hz3g5dx-WS30-unsplash.jpg",
+        "instructor": "Jessica Lee",
+        "available_seat": 4,
+        "price": 35,
+        "popularity": 5,
+        "total_students" :  26
+      },
+      {
+        "classname": "Trumpet",
+        "image": "https://i.ibb.co/wMj2B7v/gabe-pierce-sx2ir-Iwt9-Jw-unsplash.jpg",
+        "instructor": "Matthew Turner",
+        "available_seat": 6,
+        "price": 55,
+        "popularity": 6,
+        "total_students" :  10
+      },
+      {
+        "classname": "Cello",
+        "image": "https://i.ibb.co/vcZQ9LP/hal-gatewood-l-FUpu-Sl-K6c8-unsplash.jpg",
+        "instructor": "Olivia Adams",
+        "available_seat": 2,
+        "price": 60,
+        "popularity": 4,
+        "total_students" :  4
+      },
+      {
+        "classname": "Harp",
+        "image": "https://i.ibb.co/7km2Qnc/victor-serban-0fl9-EOr-Ygb8-unsplash.jpg",
+        "instructor": "William Foster",
+        "available_seat": 3,
+        "price": 75,
+        "popularity": 3,
+        "total_students" :  4
+      },
+      {
+        "classname": "Bass Guitar",
+        "image": "https://i.ibb.co/NSq5BPw/alexandre-st-louis-Ilfp-Kw-RMln0-unsplash.jpg",
+        "instructor": "Sophia Campbell",
+        "available_seat": 5,
+        "price": 50,
+        "popularity": 5,
+        "total_students" :  7
+      },
+      {
+        "classname": "Trombone",
+        "image": "https://i.ibb.co/b71TyRC/bruno-justo-pego-He-WRZ5-5-Kt0-unsplash.jpg",
+        "instructor": "Daniel Hernandez",
+        "available_seat": 4,
+        "price": 65,
+        "popularity": 4,
+        "total_students" :  5
+      },
+      {
+        "classname": "Clarinet",
+        "image": "https://i.ibb.co/wMj2B7v/gabe-pierce-sx2ir-Iwt9-Jw-unsplash.jpg",
+        "instructor": "Ava Martinez",
+        "available_seat": 4,
+        "price": 40,
+        "popularity": 5,
+        "total_students" :  7
+      },
+    
+      {
+        "classname": "Accordion",
+        "image": "https://i.ibb.co/wBnh71L/simone-impei-RLHts-H4-Blw-unsplash.jpg",
+        "instructor": "Chloe Harris",
+        "available_seat": 3,
+        "price": 80,
+        "popularity": 3
+      }
+    ]

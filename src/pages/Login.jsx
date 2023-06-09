@@ -47,7 +47,7 @@ const Login = () => {
             <div className="min-h-screen text-white bg-transparent hero">
                 <div className="flex-col hero-content md:flex-row-reverse">
                     <div className="text-center md:w-1/2 lg:text-left">
-                        <h1 className="text-5xl font-bold text-center">Login now!</h1>
+                        <h1 className="font-mono text-5xl font-bold text-center">Login now!</h1>
                         <div className="py-6 text-center rounded-lg"><img src={image} alt="" /></div>
                     </div>
                     <div className="max-w-sm shadow-2xl card md:w-1/2 bg-fuchsia-950">
@@ -68,7 +68,7 @@ const Login = () => {
                                 </label>
                             </div>
                             
-                            {/* TODO: make button disabled for captcha */}
+                         
                             <div className="mt-6 form-control">
                                 <input  className="text-white btn bg-fuchsia-700" type="submit" value="Login" />
                             </div>

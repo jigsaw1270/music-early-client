@@ -10,6 +10,12 @@ import Signup from "../pages/Signup";
 import Dashboard from "../layout/Dashboard";
 import Alluser from "../pages/Alluser";
 import PrivateRoute from "./PrivateRoute";
+import Enrolledclasses from "../pages/Enrolledclasses";
+import Payment from "../pages/payment";
+import Paymenthistory from "../pages/Paymenthistory";
+import Manageclasses from "../pages/Manageclasses";
+import Addclass from "../pages/Addclass";
+import Instaclasses from "../pages/Instaclasses";
 
  export const router = createBrowserRouter([
     {
@@ -46,6 +52,30 @@ import PrivateRoute from "./PrivateRoute";
         {
           path: 'alluser',
           element: <Alluser></Alluser>
+        },
+        {
+          path: 'enrolled',
+          element: <Enrolledclasses></Enrolledclasses>
+        },
+        {
+          path: 'payment',
+          element : <Payment></Payment>
+        },
+        {
+          path: 'paymenthistory',
+          element : <Paymenthistory></Paymenthistory>
+        },
+        {
+          path: 'manageclasses',
+          element : <Manageclasses></Manageclasses>
+        },
+        {
+          path: 'addclass',
+          element: <Addclass></Addclass>
+        },
+        {
+          path: 'instaclasses',
+          element: <Instaclasses></Instaclasses>
         }
       ]
     }

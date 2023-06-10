@@ -1,10 +1,13 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import useAdmin from '../hooks/useAdmin';
+import useInstructor from '../hooks/useInstructor';
+import { FaBookOpen, FaBookmark, FaHome, FaMoneyCheckAlt, FaTimesCircle, FaUserClock, FaUserGraduate } from 'react-icons/fa';
 
 const Dashboard = () => {
 
-    const isAdmin = true ;
-    const isInstructor = false;
+    const [isAdmin] = useAdmin();
+    const [isInstructor] = useInstructor();
     return (
         <div className="drawer lg:drawer-open ">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -25,15 +28,17 @@ const Dashboard = () => {
            
                         
                     </> : 
-                    isInstructor ? <>    <li><NavLink to="/dashboard/home"> Selected classes</NavLink></li>
-                        <li><NavLink to="/dashboard/reservations">Enrolled classes</NavLink></li> 
+                    isInstructor ? <>    <li><NavLink to="/dashboard/home">My classes</NavLink></li>
+                        <li><NavLink to="/dashboard/reservations">Add a Class</NavLink></li> 
                         </> :
                     
                     
                     
                     <>
-                        <li><NavLink to="/dashboard/home"> Selected classes</NavLink></li>
-                        <li><NavLink to="/dashboard/reservations">Enrolled classes</NavLink></li>
+                        <li><NavLink to="/dashboard/home"><FaBookmark></FaBookmark> Selected classes</NavLink></li>
+                        <li><NavLink to="/dashboard/reservations"><FaUserGraduate></FaUserGraduate> Enrolled classes</NavLink></li>
+                        <li><NavLink to="/dashboard/reservations"><FaMoneyCheckAlt></FaMoneyCheckAlt>Make Payment</NavLink></li>
+                        <li><NavLink to="/dashboard/reservations"><FaUserClock></FaUserClock>Payment History</NavLink></li>
                      
 
                      
@@ -44,9 +49,9 @@ const Dashboard = () => {
 
 
                 <div className="divider"></div>
-                <li><NavLink to="/"> Home</NavLink> </li>
-                <li><NavLink to="/menu"> Our Menu</NavLink></li>
-                <li><NavLink to="/order/salad">Order Food</NavLink></li>
+                <li><NavLink to="/"><FaHome></FaHome> Home</NavLink> </li>
+                <li><NavLink to="/classes"> <FaBookOpen></FaBookOpen> Classes</NavLink></li>
+                <li><NavLink to="/instructors"><FaUserGraduate></FaUserGraduate>Instructors</NavLink></li>
             </ul>
 
         </div>

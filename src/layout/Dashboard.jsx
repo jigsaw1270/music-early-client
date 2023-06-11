@@ -35,7 +35,8 @@ const Dashboard = () => {
                     
                     
                     <>
-                        <li><NavLink to="/dashboard"><FaBookmark></FaBookmark> Selected classes</NavLink></li>
+                        <li><NavLink to="/dashboard"><FaHome></FaHome>Home</NavLink></li>
+                        <li><NavLink to="/dashboard/selectedclasses"><FaBookmark></FaBookmark> Selected classes</NavLink></li>
                         <li><NavLink to="/dashboard/enrolled"><FaUserGraduate></FaUserGraduate> Enrolled classes</NavLink></li>
                         <li><NavLink to="/dashboard/payment"><FaMoneyCheckAlt></FaMoneyCheckAlt>Make Payment</NavLink></li>
                         <li><NavLink to="/dashboard/paymenthistory"><FaUserClock></FaUserClock>Payment History</NavLink></li>

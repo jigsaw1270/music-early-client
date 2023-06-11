@@ -16,6 +16,7 @@ import Paymenthistory from "../pages/Paymenthistory";
 import Manageclasses from "../pages/Manageclasses";
 import Addclass from "../pages/Addclass";
 import Instaclasses from "../pages/Instaclasses";
+import Selectedclass from "../pages/Selectedclass";
 
  export const router = createBrowserRouter([
     {
@@ -52,6 +53,11 @@ import Instaclasses from "../pages/Instaclasses";
         {
           path: 'alluser',
           element: <Alluser></Alluser>
+        },
+        {
+          path: 'selectedclasses',
+          element: <Selectedclass></Selectedclass>
+
         },
         {
           path: 'enrolled',

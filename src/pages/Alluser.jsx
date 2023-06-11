@@ -51,7 +51,7 @@ const Alluser = () => {
         })
 
     }
-
+// todo 
     const handleDelete = user => {
 
     }

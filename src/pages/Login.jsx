@@ -44,7 +44,7 @@ const Login = () => {
 
     return (
         <>
-            <div className="min-h-screen text-white bg-transparent hero">
+            <div className="min-h-screen bg-transparent hero">
                 <div className="flex-col hero-content md:flex-row-reverse">
                     <div className="text-center md:w-1/2 lg:text-left">
                         <h1 className="font-mono text-5xl font-bold text-center">Login now!</h1>
@@ -63,9 +63,7 @@ const Login = () => {
                                     <span className="text-white label-text">Password</span>
                                 </label>
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" />
-                                <label className="label">
-                                    <a href="#" className="text-white label-text-alt link link-hover ">Forgot password?</a>
-                                </label>
+                                
                             </div>
                             
                          
@@ -74,7 +72,7 @@ const Login = () => {
                             </div>
                         </form>
                         <GoogleSignIn></GoogleSignIn>
-                        <p><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
+                        <p className='text-white'><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
                     </div>
                 </div>
             </div>

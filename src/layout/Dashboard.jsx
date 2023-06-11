@@ -6,7 +6,9 @@ import { FaBookDead, FaBookOpen, FaBookmark, FaHome, FaMoneyCheckAlt,  FaPlusCir
 
 const Dashboard = () => {
 
-    const [isAdmin] = useAdmin();
+   
+   const [isAdmin] = useAdmin();
+
     const [isInstructor] = useInstructor();
     return (
         <div className="drawer lg:drawer-open ">

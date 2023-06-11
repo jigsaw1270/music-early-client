@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Provider/Authprovider';
+import logo from '../assets/images/cover/Music.png'
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -35,7 +36,7 @@ const Navbar = () => {
                           {navOptions}
                       </ul>
                   </div>
-                  <a className="font-mono text-xl normal-case btn btn-ghost">Musically</a>
+                  <a className="font-mono text-xl normal-case btn btn-ghost"><img className='h-14 rounded-xl' src={logo} alt="" /></a>
               </div>
               <div className="hidden navbar-center lg:flex">
                   <ul className="px-1 menu menu-horizontal">

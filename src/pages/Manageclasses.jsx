@@ -5,12 +5,16 @@ const Manageclasses = () => {
     const upadtedUser = {status};
 
     useEffect(() => {
+      fetchClasses();
+    }, []);
+  
+    const fetchClasses = () => {
       // Fetch the classes from the server
       fetch('http://localhost:5000/newins')
         .then((response) => response.json())
         .then((data) => setClasses(data))
         .catch((error) => console.log('Error fetching classes:', error));
-    }, []);
+    };
   
     const handleApproval = async (_id) => {
       try {
@@ -21,9 +25,13 @@ const Manageclasses = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(upadtedUser),
+          
         });
-  
+        console.log('update-',classes);
         if (response.ok) {
+
+          fetchClasses();
+
           // Class approved successfully
           console.log('Class approved!');
           // You can perform additional actions here, such as updating the UI
@@ -37,6 +45,7 @@ const Manageclasses = () => {
     };
   
     const handleDenial = async (_id) => {
+      
       try {
         // Send a DELETE request to the server to delete the class
         const response = await fetch(`http://localhost:5000/newins/${_id}`, {
@@ -68,9 +77,9 @@ const Manageclasses = () => {
   
     return (
       <div>
-        <h1>Admin Page</h1>
+        <h1 className='text-4xl'>Total Assigned Classes : {classes.length}</h1>
         {classes.length > 0 ? (
-          <table>
+          <table className="table w-full table-zebra">
             <thead>
               <tr>
                 <th>Class Name</th>
@@ -78,6 +87,7 @@ const Manageclasses = () => {
                 <th>Instructor Email</th>
                 <th>Available Seats</th>
                 <th>Price</th>
+                <th>Actions</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -87,15 +97,17 @@ const Manageclasses = () => {
                   <td>{classItem.className}</td>
                   <td>{classItem.name}</td>
                   <td>{classItem.email}</td>
-                  <td>{classItem.available_seats}</td>
-                  <td>{classItem.price}</td>
-                  <td>
-                    <button onClick={() => handleApproval(classItem._id)}>
+                  <td className='text-center'>{classItem.available_seats}</td>
+                  <td className='text-center'>{classItem.price}</td>
+                  <td> <button className='btn btn-danger' onClick={() => handleApproval(classItem._id)}  disabled={classItem.status === 'approved'}>
                       Approve
                     </button>
-                    <button onClick={() => handleDenial(classItem._id)}>
-                      Deny
+                  
+                  </td>
+                  <td><button className='btn btn-danger' onClick={() => handleDenial(classItem._id)}  disabled={classItem.status === 'approved'}>
+                     Deny
                     </button>
+              
                   </td>
                 </tr>
               ))}

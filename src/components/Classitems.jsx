@@ -4,7 +4,7 @@ import useCart from '../hooks/useCart';
 import useAuth from '../hooks/useAuth';
 import Swal from 'sweetalert2';
 
-const Classitems = ({item}) => {
+const Classitems = ({item, isAdmin, isInstructor}) => {
     const {classname, image , instructor ,available_seat, price , popularity , total_students ,_id} = item;
     const {user} = useAuth();
     const [, refetch] = useCart();
@@ -62,7 +62,8 @@ const Classitems = ({item}) => {
     <p>Available Seat :  {available_seat}</p>
     <p>Students enrolled:  {total_students}</p>
     <div className="justify-end card-actions">
-      <button onClick={() => handleAddToCart(item)} className="text-white btn bg-fuchsia-700">Add course</button>
+      <button onClick={() => handleAddToCart(item)} className="text-white btn bg-fuchsia-700"
+      disabled={available_seat === 0 || isAdmin || isInstructor}>Add course</button>
     </div>
   </div>
 </div>

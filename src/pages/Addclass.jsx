@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useAuth from '../hooks/useAuth';
+import Swal from 'sweetalert2';
 
 const Addclass = () => {
     const {user} = useAuth();
@@ -49,7 +50,14 @@ const Addclass = () => {
 
       if (response.ok) {
         // Class created successfully
-        console.log('Class created!');
+         
+Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'class added for approval',
+  showConfirmButton: false,
+  timer: 1500
+})
         // You can perform additional actions here, such as redirecting to another page
       } else {
         // Error occurred while creating the class

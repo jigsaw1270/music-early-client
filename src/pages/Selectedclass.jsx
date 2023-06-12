@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useCart from '../hooks/useCart';
 import Swal from 'sweetalert2';
 import { FaTrashAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Selectedclass = () => {
     const [cart, refetch] = useCart();
-    console.log(cart);
+    console.log(cart._id);
     // how does reduce work!!!
     const total = cart.reduce((sum, item) => item.price + sum, 0);
+
+
+   
 
     const handleDelete = item => {
         Swal.fire({
@@ -37,6 +41,7 @@ const Selectedclass = () => {
             }
         })
     }
+  
 
     return (
         <div className="w-full">
@@ -84,7 +89,7 @@ const Selectedclass = () => {
                                 <td>
                                     <button onClick={() => handleDelete(item)} className="text-white bg-red-600 btn btn-ghost"><FaTrashAlt></FaTrashAlt></button>
                                 </td>
-                                <td>  <button className="btn btn-warning btn-sm">PAY</button></td>
+                                <td>  <Link to="payment"><button  className="btn btn-warning btn-sm">PAY</button></Link></td>
                             </tr>)
                         }
 

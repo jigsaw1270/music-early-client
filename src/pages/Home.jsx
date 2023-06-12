@@ -5,11 +5,13 @@ import image1 from '../assets/images/cover/cover4.jpg'
 import image2 from '../assets/images/cover/cover1.jpg';
 import Popularclasses from '../components/Popularclasses';
 import Popularinstructors from '../components/Popularinstructors';
+import Extraa from '../components/Extraa';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <Extraa></Extraa>
             <Cover  img={image1} title={'Popular classes'} subtitle={'Discover a wide range of musical instruments to choose from, including the timeless piano, versatile guitar, elegant violin, energetic drums, soulful saxophone, enchanting flute, and many more. Our classes cater to all ages and skill levels, ensuring that everyone can find their perfect fit.'} ></Cover>
             <Popularclasses></Popularclasses>
 

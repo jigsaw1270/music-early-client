@@ -64,7 +64,7 @@ import Selectedclass from "../pages/Selectedclass";
           element: <Enrolledclasses></Enrolledclasses>
         },
         {
-          path: 'payment',
+          path: 'selectedclasses/payment',
           element : <Payment></Payment>
         },
         {

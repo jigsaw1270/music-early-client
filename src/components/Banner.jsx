@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
-import banner1 from '../assets/images/banner/img1.png'
+import banner1 from '../assets/images/banner/img1.jpg'
 import banner2 from '../assets/images/banner/img2.png'
 import banner3 from '../assets/images/banner/img3.jpg'
 import banner4 from '../assets/images/banner/img4.jpg'

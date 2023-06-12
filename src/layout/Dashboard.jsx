@@ -18,7 +18,7 @@ const Dashboard = () => {
             <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
         </div>
-        <div className="drawer-side bg-[#961b8b] text-white">
+        <div className="text-white drawer-side " style={{backgroundImage: `url(https://i.ibb.co/7Wsmj6M/wallpaperflare-com-wallpaper.jpg)`}}>
             <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
             <ul className="p-4 menu w-80">
 

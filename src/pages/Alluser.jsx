@@ -53,6 +53,19 @@ const Alluser = () => {
     }
 // todo 
     const handleDelete = user => {
+        fetch(`http://localhost:5000/users/${user._id}`, {
+            method: 'DELETE'
+        })
+        .then(res=> res.json())
+        .then(data => {
+            console.log(data);
+            if(data.deletedCount>0){
+                refetch();
+                alert('deleted successfully');
+               
+               
+            }
+        })
 
     }
     return (

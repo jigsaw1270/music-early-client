@@ -27,7 +27,7 @@ const GoogleSignIn = () => {
                 const loggedinUser = result.user;
                 console.log(loggedinUser);
                 const saveUser = {name : loggedinUser.displayName, email : loggedinUser.email}
-                fetch('http://localhost:5000/users',{
+                fetch('https://final-assignment-server-bay.vercel.app/users',{
               method: 'POST',
               headers: {
                 'content-type':'application/json'

@@ -40,7 +40,7 @@ const Addclass = () => {
 
     try {
       // Send a POST request to the server to save the class data
-      const response = await fetch('http://localhost:5000/newins', {
+      const response = await fetch('https://final-assignment-server-bay.vercel.app/newins', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

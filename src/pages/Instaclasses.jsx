@@ -7,7 +7,7 @@ const Instaclasses = () => {
 
     useEffect(() => {
       // Fetch the classes from the server
-      fetch('http://localhost:5000/newins')
+      fetch('https://final-assignment-server-bay.vercel.app/newins')
         .then((response) => response.json())
         .then((data) => setClasses(data))
         .catch((error) => console.log('Error fetching classes:', error));

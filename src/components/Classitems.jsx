@@ -15,7 +15,7 @@ const Classitems = ({item, isAdmin, isInstructor}) => {
       console.log(item);
       if(user && user.email){
           const cartItem = {menuItemId: _id, classname, image, price, instructor,   email: user.email}
-          fetch('http://localhost:5000/carts', {
+          fetch('https://final-assignment-server-bay.vercel.app/carts', {
               method: 'POST',
               headers: {
                   'content-type': 'application/json'

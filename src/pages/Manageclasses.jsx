@@ -10,7 +10,7 @@ const Manageclasses = () => {
   
     const fetchClasses = () => {
       // Fetch the classes from the server
-      fetch('http://localhost:5000/newins')
+      fetch('https://final-assignment-server-bay.vercel.app/newins')
         .then((response) => response.json())
         .then((data) => setClasses(data))
         .catch((error) => console.log('Error fetching classes:', error));
@@ -19,7 +19,7 @@ const Manageclasses = () => {
     const handleApproval = async (_id) => {
       try {
         // Send a PUT request to the server to update the class status to "approved"
-        const response = await fetch(`http://localhost:5000/newins/${_id}`, {
+        const response = await fetch(`https://final-assignment-server-bay.vercel.app/newins/${_id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ const Manageclasses = () => {
       
       try {
         // Send a DELETE request to the server to delete the class
-        const response = await fetch(`http://localhost:5000/newins/${_id}`, {
+        const response = await fetch(`https://final-assignment-server-bay.vercel.app/newins/${_id}`, {
           method: 'DELETE',
         })
         .then(res=> res.json())

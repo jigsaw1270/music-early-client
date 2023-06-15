@@ -5,7 +5,7 @@ const usePayment = () => {
     const [classes, setClasses] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch('http://localhost:5000/payments')
+        fetch('https://final-assignment-server-bay.vercel.app/payments')
             .then(res => res.json())
             .then(data => {
                 setClasses(data);
